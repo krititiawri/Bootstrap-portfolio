@@ -1,1 +1,1 @@
-# kriti.github.io
+# krititiwari.github.io

@@ -1,0 +1,355 @@
+
+/*Positioning htnl so as to make footer absolute*/
+html{
+    position: relative;
+    min-height: 100%;
+}
+/* bottom = footer height */
+body {
+    margin: 0 0 64px;
+    background-image: url("../images/weather.png");
+}
+/*Postion the main contaier containing all the header and division*/
+.container{
+	width:1240px;
+	margin: 0 auto;
+}
+/*article for imaga and paragraph*/
+.article{
+	width: 957px;
+}
+/*To clear the floats*/
+.clearfix{
+ 	clear: both;
+ 	margin: auto;
+ }
+ /*Page header*/
+header{
+	width: 100%;
+	background-color: white;
+}
+/*Positioning  and setting the background image for main section content*/
+.content	{
+	border-style: solid;
+	border-color: #dddddd;
+   	width: 958px;
+   	background-color: white;
+   	float: left;
+   	margin-top: 10px;
+   	margin-bottom: 30px;
+   	color:#777777;
+   	font-family: georgia;
+   	margin-left: 10px;
+}
+/*positioning header*/ 	
+header{
+	width: 100%;
+	color: #ffffff;
+}
+/*propeties of Logo(my name)*/
+#logo{
+	width: 20%;
+	font-family: georgia;
+	display: inline-block;
+	background-color:#4aaaa5;
+	margin-left: 70px;
+	text-align: center;
+	color: #ffffff;
+	
+}
+/*Menu bar alignment*/
+ #menu{
+    width: 60%;
+    display: inline-block;
+    text-align: right;
+    float: right;
+    margin-right: 120px;
+}
+ /*Displaying link as a vlock to align them horizontal*/
+ul li{
+	display: inline-block;
+}
+/*Positioning of anchor tag*/
+ul li a{
+	text-align: center;
+	color: #777777;
+	text-decoration: none;
+}
+/*Positioning of profile image*/
+#bio-image{
+	width:200px;
+	float: left;
+	margin-left: 20px;
+}
+/*Positioning of connect me page*/
+.sidebar{
+	width: 260px;
+  	float: right;
+	display: inline-block;
+	font-family: georgia;
+	background-color:#ffffff;
+	border-style: solid;
+	border-color: #dddddd;
+	margin-top: 10px;
+}
+/*Paragraph alignment*/
+p{
+   margin-left: 20px;
+   color: #777777;
+   margin-bottom: 20px;
+}
+/*Properties of h2 heading*/
+h2{
+	color: #4aaaa5;
+	font-family: 'Georgia'
+	font-size: 24px;
+	margin-left: 20px;
+}
+/*Horizontal rule on the page*/
+hr{
+	background-color: #dddddd;	
+	width: 95%;
+}
+/*Properties of browser icon*/
+.icon-image{
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin-left: 20px;
+	padding: 10px;
+}
+/*Positioning of page footer and making it stick on the page*/
+footer{
+	clear: both;
+	position: absolute;
+	width: 100%;
+	height: 64px;
+	background-color: #777777;
+	border-style: solid;
+	border-width: 0.1px;
+	border-color: #cccccc;
+    text-align: center;
+    left:0;
+    bottom: 0;
+    margin-top: 50px;
+}
+/*Postioning the 7 portfolio images*/
+.image{
+	position: relative;
+    margin-left: auto ;
+    margin-right:auto ;
+    float: left;
+    margin-left: 35px;
+}
+/*when hover on link chnages color to red*/
+a:hover{
+	color:red;
+}
+/*Positioning of contact form*/
+form{
+	margin-left: 50px;
+}
+/*Positioning Text over image*/
+.img_type{ 
+   position: absolute; 
+   top: 50px;
+   margin-left: 1px;
+   width: 115px;
+   padding: 5px;
+   background-color: #4aaaa5;
+   text-align: center;
+}
+
+/*........Media Queries*/
+/*Media Query if screen size is 980 or less*/
+@media screen and (max-width:980px)
+{
+ body{
+ 	width: auto;
+ }
+
+ #logo{
+ 	width:30%;
+ 	margin: 0px;
+ 	margin-left: 70px;
+ }
+ #menu{
+ 	width: 30%;
+ 
+ 	margin: 0px;
+ 	padding: 0px;
+ 	margin-right: 280px;
+ }
+ header{
+ 	width:100%;
+ }
+ #bio-image{
+ 	width: 200px;
+ 	height: 200px;
+ 	margin-left: 50px;
+ 	margin-right: 70px;
+ 	float: left;
+ }
+ p{
+ 	margin-left: 50px;
+ }
+
+.container{
+ 	width: 100%;
+ 	margin-bottom:50px;
+ }
+.content{
+ 	width:40%;
+ 	margin-left: 70px;
+ 	margin-bottom: 20px;
+ 	/*padding: 20px;*/
+ }
+ .sidebar{
+ 	width: 30%;
+ 	margin-right:150px;
+ 	padding: 0px;
+    /*margin-left: 30px;*/
+ }
+ .article{
+ 	width:80%;
+ }
+form{
+	width: 100%;
+	margin-left: 90px;
+	margin-bottom: 70px;
+	padding: 30px;
+}
+.input{
+	margin: 20px;
+}
+}
+  /*width 768*/
+@media screen and (max-width:768px)
+{
+ body{
+ 	width: auto;
+ }
+ #logo{
+ 	width:30%;
+ 	margin: 0px;
+ 	margin-left: 70px;
+ }
+ #menu{
+ 	width: 30%;
+ 
+ 	margin: 0px;
+ 	padding: 0px;
+ 	margin-right: 150px;
+ }
+
+ header{
+ 	width:100%;
+ }
+ #bio-image{
+ 	width: 200px;
+ 	height: 200px;
+ 	margin-left: 50px;
+ 	margin-right: 20px;
+ 	float: left;
+ }
+ p{
+ 	margin-left: 50px;
+ }
+ .container{
+ 	width: 100%;
+ 	margin:0;
+ }
+ .content{
+ 	width:80%;
+ 	margin-left: 70px;
+ 	margin-bottom: 20px;
+ }
+.sidebar{
+ 	width: 80%;
+ 	margin-right:80px;
+ 	margin-bottom: 70px;
+ 	padding: 0px;
+ }
+.article{
+ 	width:80%;
+ }
+form{
+	width: 100%;
+	margin-left: 90px;
+	margin-bottom: 70px;
+	padding: 30px;
+}
+.input{
+	margin: 20px;
+}
+}
+
+/*width 640*/
+@media screen and (max-width:640px)
+{
+ body{
+ 	width: auto;
+ }
+ header{
+ 	width: 100%;
+ }
+ #logo{
+ 	width:100%;
+ 	margin: 0px;
+ }
+ #menu{
+ 	width: 100%;
+ 	padding-left: 50px;
+ 	padding-right: 40px;
+ 	background-color: white;
+ 	margin-right: 0px;
+ }
+ ul li{
+ 	float: left;
+ 	margin-left: 100px;
+ 	padding: 10px;
+ }
+ header{
+ 	width:100%;
+ }
+ #bio-image{
+ 	width: 200px;
+ 	height: 200px;
+ 	margin-left: 50px;
+ 	margin-right: 20px;
+ 	float: left;
+ }
+ p{
+ 	margin-left: 50px;
+ }
+ .container{
+ 	width: 100%;
+ 	margin:0;
+ }
+ .content{
+ 	width:80%;
+ 	margin-left: 70px;
+ 	margin-bottom: 20px;
+ }
+ .sidebar{
+ 	width: 80%;
+ 	margin-right:50px;
+ 	margin-bottom: 70px;
+ 	padding: 0px;
+ }
+ .article{
+ 	width:80%;
+ }
+form{
+	width: 100%;
+	margin-left: 90px;
+	margin-bottom: 70px;
+	padding: 30px;
+}
+.input{
+	margin: 20px;
+}
+}
+
+
+
